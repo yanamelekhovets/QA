@@ -1,0 +1,58 @@
+"Build (Version): 1.0
+Environment: 
+Operating systems: Win(10 21H2 / NT 10.0, 10 21H1, 8 NT 6.2), MacOS (10.14, 10.15, 11, 12)
+Browsers: Chrome, Safari, FF, Micr. Edge, Opera
+Devices: MacBook Pro (13-inch, M1, 2020), Dell Inspiron 7610-0114 16"" ",,
+#,Checklist:,
+1.,Upload one PDF file ,
+2.,"Check file uploading failure if file is selected, but 'Upload' button is not clicked",
+3. by file size:,3.1.  Upload 0 KB PDF file ,
+,3.2.  Upload 1 KB PDF file ,
+,3.3.  Upload 50 KB PDF file ,
+,"3.4.  Upload 99,999 KB PDF file ",
+,3.5.  Upload 100 KB PDF file ,
+,3.6.  Upload 100.001 KB PDF file ,
+,3.7.  Upload 1 MB PDF file ,
+4. by file format:,"4.1.Select non-PDF file of text format other than PDF and click 'Upload' button.
+4.1.a. TXT
+4.1.b. DOC
+4.1.c. DOCX
+4.1.d. HTML
+4.1.e. RTF",
+,"4.2. Upload file of format other than text format
+4.2.a. Grafics - PNG
+4.2.b. Grafics - JPEG
+4.2.c. Grafics - GIF
+4.2.d. Video - MP4
+4.2.e. Video - AVI
+4.2.f. Audio - m4a
+4.2.g. Compressed - ZIP
+4.2.h. CAD - STEP",
+5.,Upload the same PDF file more than once,
+6.,Upload file by double-click on 'Upload' button,
+7.,Upload PDF file opened by another app,
+8.,Upload more than one PDF files by different users at the same time,Apache Jmeter can be used for concurrent scenarions testing.
+9. by file name:,Upload PDF file having:,
+,9.1. legal special characters,
+,9.2. illegal special characters,
+,9.3. file name having Chinese hieroglyphics,
+,9.4. file name having Cyrillic characters ,
+,9.5. file name including only numbers ,
+,9.6. file name in uppercase,
+,9.7. file name in uppercase and lower case,
+,9.8. 1 character length file name,
+,9.9. 20 characters length file name,
+,9.10. 255 character length file name,
+,9.11. 256 character length file name,
+10. by file storage:,Upload PDF file,
+,10.1. from local storage,
+,10.2. from external storage,
+,"10.3. from cloud storage
+10.3.a. from iCloudeDrive (on Mac OS)
+10.3.b. from One Drive (on Windows OS)",
+11. by level of directory where file is uploaded from:,11.1. Upload PDF file from the highest level directory,
+,11.2. Upload PDF file from the medium level directory,
+,"11.3. Upload PDF file from the lowest level directory
+",
+12.,Upload password-protected PDF File ,
+13.,Close 'First Page Template' page right after clicking 'Upload' button while uploading PDF.,

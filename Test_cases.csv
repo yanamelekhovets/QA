@@ -1,0 +1,339 @@
+"Build (Version): 1.0
+Environment
+Operating systems: Win(10 21H2 / NT 10.0, 10 21H1, 8 NT 6.2), MacOS (10.14, 10.15, 11, 12)
+Browsers: Chrome, Safari, FF, Micr. Edge, Opera
+Devices: MacBook Pro (13-inch, M1, 2020), Dell Inspiron 7610-0114 16""";;;;;;;
+ID;Priority;Module;Title;Precondition;Steps;Expected Results;Test Result
+1.;Highest;PDF Templates;Upload one PDF file ;"Create one PDF file <100kb with letters+figures  filename on PC local storage.";"1. Click 'Select the file' button.
+2. Select created PDF file.
+3. Click 'Upload' button.
+4. Check the database.";"1. Window for selecting doc from PC is opened.
+2. Selected PDF file is preloaded.
+3. PDF file is uploaded successfully: PDF file is displayed on 'First Page Template' page. 
+4. File exists in the database.";New
+2.;Highest;PDF Templates;"Check file uploading failure if file is selected, but 'Upload' button is not clicked";"Create one PDF file <100kb with letters+figures  filename on PC local strage.";"1. Click 'Select the file' button.
+2. Select created PDF file.
+3. Do not click 'Upload' button and reload the page (restart the app).
+4.Check the database.";"1. Window for selecting doc from PC is opened.
+2. Selected PDF file is preloaded.
+3. PDF file is not uploaded: PDF file is not displayed on 'First Page Template' page. 
+4. File does not exist in the database.";New
+3.1.;Highest;PDF Templates;Upload 0 KB PDF file;Create 0 KB PDF file.;"1. Click 'Select the file' button.
+2. Select created PDF file.
+3. Click 'Upload' button.
+4.Check the database.";"1. Window for selecting doc from PC is opened.
+2. Selected PDF file is preloaded.
+3. PDF file is uploaded successfully: PDF file is displayed on 'First Page Template' page. 
+4. File exists in the database.";New
+3.2.;Highest;PDF Templates;Upload 1 KB PDF file;Create 1 KB PDF file.;"1. Click 'Select the file' button.
+2. Select created PDF file.
+3. Click 'Upload' button.
+4.Check the database.";"1. Window for selecting doc from PC is opened.
+2. Selected PDF file is preloaded.
+3. PDF file is uploaded successfully: PDF file is displayed on 'First Page Template' page. 
+4. File exists in the database.";New
+3.3.;Highest;PDF Templates;Upload 50 KB PDF file;Create 50 KB PDF file.;"1. Click 'Select the file' button.
+2. Select created PDF file.
+3. Click 'Upload' button.
+4.Check the database.";"1. Window for selecting doc from PC is opened.
+2. Selected PDF file is preloaded.
+3. PDF file is uploaded successfully: PDF file is displayed on 'First Page Template' page. 
+4. File exists in the database.";New
+3.4.;Highest;PDF Templates;Upload 99,999 KB PDF file;Create 99,999 KB PDF file.;"1. Click 'Select the file' button.
+2. Select created PDF file.
+3. Click 'Upload' button.
+4.Check the database.";"1. Window for selecting doc from PC is opened.
+2. Selected PDF file is preloaded.
+3. PDF file is uploaded successfully: PDF file is displayed on 'First Page Template' page. 
+4. File exists in the database.";New
+3.5.;Highest;PDF Templates;Upload 100 KB PDF file;Create 100 KB PDF file.;"1. Click 'Select the file' button.
+2. Select created PDF file.
+3. Click 'Upload' button.
+4.Check the database.";"1. Window for selecting doc from PC is opened.
+2. Selected PDF file is preloaded.
+3. PDF file is uploaded successfully: PDF file is displayed on 'First Page Template' page. 
+4. File exists in the database.";New
+3.6.;Highest;PDF Templates;Upload 100.001 KB PDF file;Create 100,001 KB PDF file.;"1. Click 'Select the file' button.
+2. Select created PDF file.
+3. Click 'Upload' button.
+4.Check the database.";"1. Window for selecting doc from PC is opened.
+2. Selected PDF file is preloaded.
+3. PDF file is not uploaded: PDF file is not displayed on 'First Page Template' page.  Error notification appears.
+4. File does not exist in the database.";New
+3.7.;Highest;PDF Templates;Upload 1 MB PDF file;Create 1 MB PDF file.;"1. Click 'Select the file' button.
+2. Select created PDF file.
+3. Click 'Upload' button.
+4.Check the database.";"1. Window for selecting doc from PC is opened.
+2. Selected PDF file is preloaded.
+3. PDF file is not uploaded: PDF file is not displayed on 'First Page Template' page. Error notification appears. 
+4. File does not exist in the database.";New
+4.1.a.;Highest;PDF Templates;Select TXT file and click 'Upload' button;Create TXT file.;"1. Click 'Select the file' button.
+2. Select created  file.
+3. Click 'Upload' button.
+4.Check the database.";"1. Window for selecting doc from PC is opened.
+2. Selected file is preloaded.
+3. File is not uploaded: File is not dispalyed on 'First Page Template' page. Error notification appears.
+4. File does not exist in the database.";New
+4.1.b.;Highest;PDF Templates;Select DOC file and click 'Upload' button;Create DOC file.;"1. Click 'Select the file' button.
+2. Select created file.
+3. Click 'Upload' button.
+4.Check the database.";"1. Window for selecting doc from PC is opened.
+2. Selected file is preloaded.
+3. File is not uploaded: File is not dispalyed on 'First Page Template' page. Error notification appears.
+4. File does not exist in the database.";New
+4.1.c.;Highest;PDF Templates;Select DOCX file and click 'Upload' button;Create DOCX file.;"1. Click 'Select the file' button.
+2. Select created file.
+3. Click 'Upload' button.
+4.Check the database.";"1. Window for selecting doc from PC is opened.
+2. Selected file is preloaded.
+3. File is not uploaded: File is not dispalyed on 'First Page Template' page. Error notification appears.
+4. File does not exist in the database.";New
+4.1.d.;Highest;PDF Templates;Select HTML  file and click 'Upload' button;Create HTML file.;"1. Click 'Select the file' button.
+2. Select created file.
+3. Click 'Upload' button.
+4.Check the database.";"1. Window for selecting doc from PC is opened.
+2. Selected file is preloaded.
+3. File is not uploaded: File is not dispalyed on 'First Page Template' page. Error notification appears.
+4. File does not exist in the database.";New
+4.1.e.;Highest;PDF Templates;Select RTF file and click 'Upload' button;Create RTF file.;"1. Click 'Select the file' button.
+2. Select created file.
+3. Click 'Upload' button.
+4.Check the database.";"1. Window for selecting doc from PC is opened.
+2. Selected file is preloaded.
+3. File is not uploaded: File is not dispalyed on 'First Page Template' page. Error notification appears.
+4. File does not exist in the database.";New
+4.2.a.;Highest;PDF Templates;Select PNG file and click 'Upload' button;Create PNG file.;"1. Click 'Select the file' button.
+2. Select created file.
+3. Click 'Upload' button.
+4.Check the database.";"1. Window for selecting doc from PC is opened.
+2. Selected file is preloaded.
+3. File is not uploaded: File is not dispalyed on 'First Page Template' page. Error notification appears.
+4. File does not exist in the database.";New
+4.2.b.;Highest;PDF Templates;Select JPEG file and click 'Upload' button;Create JPEG file.;"1. Click 'Select the file' button.
+2. Select created file.
+3. Click 'Upload' button.
+4.Check the database.";"1. Window for selecting doc from PC is opened.
+2. Selected file is preloaded.
+3. File is not uploaded: File is not dispalyed on 'First Page Template' page. Error notification appears.
+4. File does not exist in the database.";New
+4.2.c.;Highest;PDF Templates;Select GIF file and click 'Upload' button;Create GIF file.;"1. Click 'Select the file' button.
+2. Select created file.
+3. Click 'Upload' button.
+4.Check the database.";"1. Window for selecting doc from PC is opened.
+2. Selected file is preloaded.
+3. File is not uploaded: File is not dispalyed on 'First Page Template' page. Error notification appears.
+4. File does not exist in the database.";New
+4.2.d.;Highest;PDF Templates;Select MP4 file and click 'Upload' button;Create MP4 file.;"1. Click 'Select the file' button.
+2. Select created file.
+3. Click 'Upload' button.
+4.Check the database.";"1. Window for selecting doc from PC is opened.
+2. Selected file is preloaded.
+3. File is not uploaded: File is not dispalyed on 'First Page Template' page. Error notification appears.
+4. File does not exist in the database.";New
+4.2.e.;Highest;PDF Templates;Select AVI  file and click 'Upload' button;Create AVI file.;"1. Click 'Select the file' button.
+2. Select created file.
+3. Click 'Upload' button.
+4.Check the database.";"1. Window for selecting doc from PC is opened.
+2. Selected file is preloaded.
+3. File is not uploaded: File is not dispalyed on 'First Page Template' page. Error notification appears.
+4. File does not exist in the database.";New
+4.2.f.;Highest;PDF Templates;Select m4a  file and click 'Upload' button;Create m4a file.;"1. Click 'Select the file' button.
+2. Select created file.
+3. Click 'Upload' button.
+4.Check the database.";"1. Window for selecting doc from PC is opened.
+2. Selected file is preloaded.
+3. File is not uploaded: File is not dispalyed on 'First Page Template' page. Error notification appears.
+4. File does not exist in the database.";New
+4.2.g.;Highest;PDF Templates;Select ZIP  file and click 'Upload' button;Create ZIP file.;"1. Click 'Select the file' button.
+2. Select created file.
+3. Click 'Upload' button.
+4.Check the database.";"1. Window for selecting doc from PC is opened.
+2. Selected file is preloaded.
+3. File is not uploaded: File is not dispalyed on 'First Page Template' page. Error notification appears.
+4. File does not exist in the database.";New
+4.2.h.;Highest;PDF Templates;Select STEP  file and click 'Upload' button;Create STEP file.;"1. Click 'Select the file' button.
+2. Select created file.
+3. Click 'Upload' button.
+4.Check the database.";"1. Window for selecting doc from PC is opened.
+2. Selected file is preloaded.
+3. File is not uploaded: File is not dispalyed on 'First Page Template' page. Error notification appears.
+4. File does not exist in the database.";New
+5.;Medium;PDF Templates;Upload the same PDF file more than once;Create valid PDF on PC storage.;"1. Click 'Select the file' button.
+2. Select one PDF file.
+3. Click 'Upload' button.
+4. Check the database.
+5. Start another session: open 'PDF Templates' tab.
+6. Click 'Select the file' button.
+7. Select the same PDF file.
+8. Click 'Upload' button.
+9. Check the database.";"1. Window for selecting doc from PC is opened.
+2. Selected PDF file is preloaded.
+3. PDF file is uploaded successfully: PDF file is displayed on 'First Page Template' page. 
+4. File exists in the database.
+5. 'PDF Template' tab is open.
+6.Window for selecting doc from PC is opened.
+7. Selected PDF file is preloaded.
+8.PDF file is uploaded successfully: PDF file is displayed on 'First Page Template' page. 
+9. File exists in the database (IDs of two PDF files are different).";New
+6.;High;PDF Templates;Upload file by double-click on 'Upload' button;Create valid PDF on PC storage.;"1. Click 'Select the file' button.
+2. Select one PDF file.
+3. Double-click 'Upload' button.
+4. Check the database.";"1. Window for selecting doc from PC is opened.
+2. Selected PDF file is preloaded.
+3. Double-click action is accepted as one click action. PDF file is uploaded successfully: PDF file is displayed on 'First Page Template' page. 
+4. File exists in the database.";New
+7.;Medium;PDF Templates;Upload PDF file opened by another app;"Install Adobe Reader.  Create valid PDF on PC storage.";"1. Open PDF file in Adobe Reader
+2. Go to 'First page template' page and click 'Select the file' button.
+3. Select PDF file opened by Adobe Reader.
+4. Click 'Upload' button.
+5. Check the database.";"1. File is opened in Adobe Reader.
+2. Window for selecting doc from PC is opened.
+3. Selected PDF file is preloaded.
+4. PDF file is uploaded successfully: PDF file is displayed on 'First Page Template' page. 
+4. File exists in the database.";New
+8.;Low;PDF Templates;"Upload more than one PDF files by different  users at the same time";"Install Apache Jmeter.  Create test plan for PDF Templates feature.";"1. Set up number of threads (users) = 2
+2. Set up Parallel Controller
+3. Run the test
+4.Check the database.";"3. PDF files are succsessfully uploaded: PDF files are displayed on 'First Page Template' page. 
+4. Files exist in the database.";New
+9.1.;Medium;PDF Templates;"Upload PDF file having legal special characters in file name.";"Create PDF file having 'test1234 ()_-,.' file  name on PC storage.";"1. Click 'Select the file' button.
+2. Select created PDF file.
+3. Click 'Upload' button.
+4. Check the database.";"1. Window for selecting doc from PC is opened.
+2. Selected PDF file is preloaded.
+3. PDF file is uploaded successfully: PDF file is displayed on 'First Page Template' page. 
+4. File exists in the database.";New
+9.1.;Lowest;PDF Templates;"Upload PDF file having illegal special  characters in file name.";"Create PDF file having file having  'test123@ $ % & \ / : * ? "" ' < > | ~ ` # ^ + = { } [ ] ;' file name  on PC storage..";"1. Click 'Select the file' button.
+2. Select created PDF file.
+3. Click 'Upload' button.
+4. Check the database.";"1. Window for selecting doc from PC is opened.
+2. Selected PDF file is preloaded.
+3. PDF file is uploaded successfully: PDF file is displayed on 'First Page Template' page. 
+4. File exists in the database.";New
+9.3.;Lowest;PDF Templates;"Upload PDF file having file name with  Chinese hieroglyphics.";Create PDF file having '标题' file name on PC storage.;"1. Click 'Select the file' button.
+2. Select created PDF file.
+3. Click 'Upload' button.
+4. Check the database.";"1. Window for selecting doc from PC is opened.
+2. Selected PDF file is preloaded.
+3. PDF file is uploaded successfully: PDF file is displayed on 'First Page Template' page. 
+4. File exists in the database.";New
+9.4.;Medium;PDF Templates;"Upload PDF file having file name with  Cyrillic characters.";Create PDF file having 'Тест' file name on PC storage.;"1. Click 'Select the file' button.
+2. Select created PDF file.
+3. Click 'Upload' button.
+4. Check the database.";"1. Window for selecting doc from PC is opened.
+2. Selected PDF file is preloaded.
+3. PDF file is uploaded successfully: PDF file is displayed on 'First Page Template' page. 
+4. File exists in the database.";New
+9.5.;High;PDF Templates;"Upload PDF file having file name including  only numbers.";Create PDF file having '1234567890' file name on PC storage.;"1. Click 'Select the file' button.
+2. Select created file.
+3. Click 'Upload' button.
+4. Check the database.";"1. Window for selecting doc from PC is opened.
+2. Selected PDF file is preloaded.
+3. PDF file is uploaded successfully: PDF file is displayed on 'First Page Template' page. 
+4. File exists in the database.";New
+9.6.;High;PDF Templates;Upload PDF file having file name in uppercase.;PDF file having 'FILENAME' file name on PC storage.;"1. Click 'Select the file' button.
+2. Select created file.
+3. Click 'Upload' button.
+4. Check the database.";"1. Window for selecting doc from PC is opened.
+2. Selected PDF file is preloaded.
+3. PDF file is uploaded successfully: PDF file is displayed on 'First Page Template' page. 
+4. File exists in the database.";New
+9.7.;High;PDF Templates;"Upload PDF file having file name in uppercase  and lowercase.";"Create PDF file having 'FILENAME_filename'  file name on PC storage.";"1. Click 'Select the file' button.
+2. Select created file.
+3. Click 'Upload' button.
+4. Check the database.";"1. Window for selecting doc from PC is opened.
+2. Selected PDF file is preloaded.
+3. PDF file is uploaded successfully: PDF file is displayed on 'First Page Template' page. 
+4. File exists in the database.";New
+9.8.;High;PDF Templates;"Upload PDF file having 1 character length file  name";PDF file having 'x' file name on PC storage.;"1. Click 'Select the file' button.
+2. Select created file.
+3. Click 'Upload' button.
+4. Check the database.";"1. Window for selecting doc from PC is opened.
+2. Selected PDF file is preloaded.
+3. PDF file is uploaded successfully: PDF file is displayed on 'First Page Template' page. 
+4. File exists in the database.";New
+9.9.;High;PDF Templates;"Upload PDF file having 20 characters length  file name";"Create PDF file having 'twentycharacters_123'  file name on PC storage.";"1. Click 'Select the file' button.
+2. Select created file.
+3. Click 'Upload' button.
+4. Check the database.";"1. Window for selecting doc from PC is opened.
+2. Selected PDF file is preloaded.
+3. PDF file is uploaded successfully: PDF file is displayed on 'First Page Template' page. 
+4. File exists in the database.";New
+9.10.;Low;PDF Templates;"Upload PDF file having 255 character length  file name";"Create PDF file having  'testnametestnametestnametestnametestnametestnametes tnametestnametestnametestnametestnametestnametestna metestnametestnametestnametestnametestnametestname testnametestnametestnametestnametestnametestnametes tnametestnametestnametestnametestnametestnametestna m' file name on PC storage.";"1. Click 'Select the file' button.
+2. Select created file.
+4. Check the database.";"1. Window for selecting doc from PC is opened.
+2. Selected PDF file is preloaded.
+3. PDF file is uploaded successfully: PDF file is displayed on 'First Page Template' page. 
+4. File exists in the database.";New
+9.11.;Low;PDF Templates;"Upload PDF file having 256 character length  file name";"Create PDF file having 'testnametestnametes tnametestnametestnametestnamete stnametestnametestnametestnametestnametestnametestn ametestnametestnametestnametestnametestnametestnam etestnametestnametestnametestnametestnametestnamete stnametestnametestnametestnametestnametestnametestn ame' file name on PC storage.";"1. Click 'Select the file' button.
+2. Select created file.
+4. Check the database.";"1. Window for selecting doc from PC is opened.
+2. Selected PDF file is preloaded.
+3. PDF file is uploaded successfully: PDF file is displayed on 'First Page Template' page. 
+4. File exists in the database.";New
+10.1;Highest;PDF Templates;Upload PDF file from local storage;Create valid PDF on PC local disk.;"1. Click 'Select the file' button.
+2. Select created PDF file.
+3. Click 'Upload' button.
+4. Check the database.";"1. Window for selecting doc from PC is opened.
+2. Selected PDF file is preloaded.
+3. PDF file is uploaded successfully: PDF file is displayed on 'First Page Template' page. 
+4. File exists in the database.";New
+10.2;High;PDF Templates;Upload PDF file from external storage;Create valid PDF on external storage.;"1. Click 'Select the file' button.
+2. Select created PDF file.
+3. Click 'Upload' button.
+4. Check the database.";"1. Window for selecting doc from PC is opened.
+2. Selected PDF file is preloaded.
+3. PDF file is uploaded successfully: PDF file is displayed on 'First Page Template' page. 
+4. File exists in the database.";New
+10.3.a.;Low;PDF Templates;Upload PDF from iCloudeDrive storage.;Mac OS. Create valid PDF file on iCloudeDrive.;"1. Click 'Select the file' button.
+2. Select PDF file from iCloudeDrive directory.
+3. Click 'Upload' button.
+4. Check the database.";"1. Window for selecting doc from PC is opened.
+2. Selected PDF file is preloaded.
+3. PDF file is uploaded successfully: PDF file is displayed on 'First Page Template' page. 
+4. File exists in the database.";New
+10.3.b.;Low;PDF Templates;Upload PDF from One Drive storage;Windows OS. Create valid PDF file on One Drive.;"1. Click 'Select the file' button.
+2. Select PDF file from One Drive directory.
+3. Click 'Upload' button.
+4. Check the database.";"1. Window for selecting doc from PC is opened.
+2. Selected PDF file is preloaded.
+3. PDF file is uploaded successfully: PDF file is displayed on 'First Page Template' page. 
+4. File exists in the database.";New
+11.1.;High;PDF Templates;Upload PDF file from the highest level directory;Create valid PDF file in the highest level directory.;"1. Click 'Select the file' button.
+2. Select PDF file from the highest level directory .
+3. Click 'Upload' button.
+4. Check the database.";"1. Window for selecting doc from PC is opened.
+2. Selected PDF file is preloaded.
+3. PDF file is uploaded successfully: PDF file is displayed on 'First Page Template' page. 
+4. File exists in the database.";New
+11.2.;High;PDF Templates;Upload PDF file from the medium level directory;Create PDF file in the second level directory.;"1. Click 'Select the file' button.
+2. Go to second level directory (nested under the highest level) and select PDF file.
+3. Click 'Upload' button.
+4. Check the database.";"1. Window for selecting doc from PC is opened.
+2. Selected PDF file is preloaded.
+3. PDF file is uploaded successfully: PDF file is displayed on 'First Page Template' page. 
+4. File exists in the database.";New
+11.3.;Low;PDF Templates;"Upload PDF file from the lowest level directory
+";Create PDF file in the lowest level directory.;"1. Click 'Select the file' button.
+2. Go to lowest level directory (root) and select PDF file.
+3. Click 'Upload' button.
+4. Check the database.";"1. Window for selecting doc from PC is opened.
+2. Selected PDF file is preloaded.
+3. PDF file is uploaded successfully: PDF file is displayed on 'First Page Template' page. 
+4. File exists in the database.";New
+12.;Low;PDF Templates;Upload password-protected PDF file ;Create password-protected PDF file. Create password.;"1. Click 'Select the file' button.
+2. Select password-protected file PDF file.
+3. Click 'Upload' button.
+4. Check the database.
+5. Check if  file is still password-pretected.";"1. Window for selecting doc from PC is opened.
+2. Selected PDF file is preloaded.
+3. PDF file is uploaded successfully: PDF file is displayed on 'First Page Template' page. 
+4. File exists in the database.
+5. File is still pasword-protected and can be accessed using password.";New
+13.;Medium;PDF Templates;"Close 'First Page Template' page right after clicking 'Upload' button while uploading PDF.";;"1. Click 'Select the file' button.
+2. Select PDF file.
+3. Click 'Upload' button and then close 'First Page Template' page.
+4. Check the database.";"1. Window for selecting doc from PC is opened.
+2. Selected PDF file is preloaded.
+3. Page is closed.
+4. PDF file is not uploaded: file doesn't exist in the database.";New
